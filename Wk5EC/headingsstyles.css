@@ -1,0 +1,45 @@
+/* Element CSS */
+header{
+    background-image: url(background.jpg);
+}
+
+h1{
+    color:green;
+}
+
+body{
+    background-image: url(wavy-1.gif);
+    font-family:'arial', 'sans-serif';
+    background-color:#d7c7aa;
+    color:green;
+    font-size:16px;
+}
+
+footer{
+    background-color: black
+    color:black;
+    border:4px dotted;
+}
+
+
+/* Descendent CSS */
+.descendents h2{
+    color:black;
+}
+.descendents h3{
+    color:black;
+}
+
+
+/* Class CSS */
+.highlight{
+    color:black;
+}
+
+.razzledazzle{
+    font-style: italic;
+}
+
+.border{
+    border: 2px solid;
+}
