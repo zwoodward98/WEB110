@@ -1,0 +1,102 @@
+<!-- Zac Woodward, Forms, November 12, 2026 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Us</title>
+
+</head>
+
+
+
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <img src="logo-1.jpg" alt="JCCC's logo">
+      <h2>Contact Us</h2>
+      <p>Please complete the form below to contact us.</p>
+
+    </header>
+
+
+
+    <main>
+
+      <form method=" a secure method of transferring information" action="https://webdevbasics.net/scripts/demo.php">
+
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" maxlength="30" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" maxlength="30" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        </div>
+
+
+
+
+
+  <!-- RADIO GROUP -->
+        <div class="form-group">
+
+          <label>How would you prefer we contact you?</label>
+
+
+          <div class="contact-options">
+            <div class="radio-option">
+              <input type="radio" id="contactEmail" name="radioOption" value="Email" required>
+              <label for="contactEmail">Email</label>
+            </div>
+
+            <div class="radio-option">
+              <input type="radio" id="phone" name="radioOption" value="Phone" required>
+              <label for="phone">Phone Call</label>
+            </div>
+
+            <div class="radio-option">
+              <input type="radio" id="text" name="radioOption" value="Text" required>
+              <label for="text">Text</label>
+            </div>
+
+            <div class="radio-option">
+              <input type="radio" id="noPref" name="radioOption" value="NoPref" required>
+              <label for="noPref">No Preference</label>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <button type="submit"> Submit </button>
+          </div>
+
+        </div>
+      </form>
+    </main>
+
+    <footer>
+       <p>&copy; 2026 JCCC Digital Media Department</p>
+    </footer>
+
+  </div>
+</body>
+</html>

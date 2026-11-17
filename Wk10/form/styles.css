@@ -1,0 +1,110 @@
+/* Zac Woodward, Forms CSS, November 12, 2026 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #17325D;
+  margin: 20px;
+}
+
+/* CENTER FORM */
+.container {
+  max-width: 700px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+header{
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: solid 5px;
+  margin-bottom: 10px;
+}
+
+header img{
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+h2{
+  margin-top: 0px;
+  color:#000;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#17325D;
+}
+
+/* MOBILE FIRST GRID */
+/* INPUTS */
+input,
+select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+input[type="radio"]{
+  margin: 0;
+}
+
+
+/* RADIO GROUP */
+.radio-option{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* SUBMIT BUTTON */
+button{
+  background-color: #ccc;
+  color:#2e6b85;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 300px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+
+/*  VALID / INVALID STYLES */
+
+/* VALID INPUTS */
+input:user-valid,
+select:user-valid {
+background-color: #82d687;
+border-color: #82d687;
+}
+
+/* INVALID INPUTS */
+input:user-invalid,
+select:user-invalid {
+  background-color: #d2988d; /* light red */
+  border-color: #e63946;
+  font-size: large;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+select:focus{
+  background-color: #fff;
+}
